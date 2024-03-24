@@ -1,5 +1,6 @@
 import { IoLocationOutline } from "react-icons/io5";
 import { AiOutlineDollarCircle } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 
 const Job = ({ job }) => {
@@ -30,7 +31,9 @@ const Job = ({ job }) => {
                 </div>
 
                 <div className="card-actions ">
-                    <button className="btn btn-primary bg-[#9873FF] px-12 py-2 text-white font-bold border-0 text-lg ">View Details</button>
+                    <Link to={`job/${id}`}>
+                        <button className="btn btn-primary bg-[#9873FF] px-12 py-2 text-white font-bold border-0 text-lg ">View Details</button>
+                    </Link>
                 </div>
             </div>
         </div>
